@@ -34,7 +34,7 @@ def cdf(img):
         for g in range(256):
             CDF[g,b] = np.sum(hist[0:g,b])/np.sum(hist[0:255,b])
     return CDF
-
+  
 def show_histogram(img):
     hist = calculate_histogram(img)
     hist_red = hist[:,0]
